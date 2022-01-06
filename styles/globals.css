@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  overflow-x: hidden;
+}
+
+@layer components {
+    .span_about{
+        @apply bg-gray-900 text-white font-bold cursor-pointer
+    }
+    .svg-icon{
+      @apply w-8 h-8 md:w-10 md:h-10 text-black transform duration-300 transition-all hover:scale-110 cursor-pointer
+    }
+}
+.clip{
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+
+
+}
+.swiper-container {
+    width: 480px;
+    overflow:hidden
+  }
+  
+  @media screen and (min-width: 350px) {
+    .swiper-container {
+      width: 500px
+    }
+  }
+  @media screen and (min-width: 410px) {
+    .swiper-container {
+      width: 600px
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .swiper-container {
+      width: 700px
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .swiper-container {
+      width: 1000px;
+    }
+  }
+
+
+.image-container {
+
+    width: 100%;
+  } 
+.image-container > div {
+      position: unset !important;
+    }
+  
+.image-container .image {
+      object-fit: cover;
+      width: 100% !important;
+      height:100%;
+      position: relative !important;
+      height: unset !important;
+}
+  
