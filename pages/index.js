@@ -142,7 +142,6 @@ const JSApps = [
 
 export default function Home() {
   const aboutMeRef = useRef(null)
-  console.log(aboutMeRef)
   useEffect(() => {
     let i = 0
     setInterval(() => {
