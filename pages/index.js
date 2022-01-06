@@ -17,7 +17,7 @@ import {
   SiMinutemailer,
   SiUpwork
 } from 'react-icons/si'
-import {ImCss3} from 'react-icons/Im'
+import {ImCss3} from 'react-icons/im'
 
 SwiperCore.use([Pagination,Navigation]);
 
