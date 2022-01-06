@@ -4,6 +4,21 @@
 body{
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(95, 95, 95);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #222;
+  outline: 1px solid rgb(68, 69, 70);
+  border-radius: 1rem;
+
+}
 
 @layer components {
     .span_about{
