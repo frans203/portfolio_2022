@@ -396,17 +396,23 @@ export default function Home() {
           <div className=' flex flex-col items-center justify-center font-[Montserrat]' >
             <h2 className='shadow-xl font-extrabold text-center  text-2xl text-white px-4 py-2 mb-4'>Contact</h2>
             <div className='flex justify-center items-center space-x-4'>
-              <SiLinkedin
-               onClick={() => router.push("https://www.linkedin.com/in/fsantanadev/")} 
-               className='svg-icon hover:text-[#0A66C2]'/>
+              <a href="https://www.linkedin.com/in/fsantanadev/">
+                <SiLinkedin
+                onClick={() => router.push("https://www.linkedin.com/in/fsantanadev/")} 
+                className='svg-icon hover:text-[#0A66C2]'/>
+              </a>
+              
                <a href="mailto:franciscosantana203@gmail.com?subject=Vamos conversar!" data-letters="contact me">
                <SiMinutemailer 
               className='svg-icon hover:text-[white]'/>
                </a>
               
+              <a href="https://www.upwork.com/freelancers/~017de2abd62e50c7a0">
               <SiUpwork 
               onClick={() => router.push("https://www.upwork.com/freelancers/~017de2abd62e50c7a0")} 
               className='svg-icon hover:text-[#14A800]'/>
+              </a>
+            
             </div>
             <p className='text-gray-300'>Hope to see you soon! :)</p>
 
